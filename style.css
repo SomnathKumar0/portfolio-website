@@ -1,20 +1,23 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*this so that the containers dont take extra space out of their fixed width*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-color: #DADDD8;
+    background-color: #0F1C2E;
     overflow-x: auto;
     overflow-y: auto;
 }
 
+
 /*Navigation bar*/
+
+
 .navbar{
     min-height: 60px;
-    background-color: #8FB339;
+    background-color:  #0F1C2E;
     color: white;
     display: flex;
     align-items: center;
@@ -33,7 +36,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%; /* nav-add needs a width, else it just shrinks to fit content and there's no extra space to distribute */
+    width: 30%; /* nav-add needs a width, else it just shrinks to fit content and there's no extra space to distribute */
     color: white;
 }
 
@@ -42,7 +45,6 @@ body{
     display: flex;    
     align-items: start;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .nametag h1{
@@ -50,12 +52,14 @@ body{
     padding: 0px 60px;
     font-size: 4rem;
     font-weight: bold;
+    color: #F8FAFC;
 }
 
 .nametag h2{
     font-weight: 600;
     margin-top: 5vh;
     padding: 0px 60px;
+    color: #F8FAFC;
 }
 
 .about-me{
@@ -63,6 +67,8 @@ body{
     padding: 0px 60px;
     font-weight: 400;
     max-width: 800px;
+    color: #CBD5E1;
+    
 }
 
 .button {
@@ -73,30 +79,125 @@ body{
 }
 
 .btn-filled {
-    background-color: white;
-    color: #0b3d2e;
+    background-color: #06B6D4;
+    color: #CBD5E1;
     padding: 12px 24px;
     border-radius: 10px;
     font-weight: 600;
 }
 
 .btn-outline {
-    border: 3px solid white;
-    color: #0b3d2e;
+    border: 3px solid #06B6D4;
+    color: #CBD5E1;
     padding: 12px 24px;
     border-radius: 10px;
     font-weight: 600;
 }
-
-.hero {
-    position: relative;
-    overflow: hidden;
+.btn1{
+    transition:transform .3s ease;
 }
 
-.hero svg{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: -1;
+.btn1:hover{
+    transform: translateY(-5px)
+}
+
+.hero {
+    position: relative; /*relative so that the items can be positioned accordingly*/
+    overflow: hidden; /*The hidden command hides the extra content getting out of the provided space*/
+}
+
+.social{
+    display: flex;
+    gap: 50px;
+    padding: 0px 60px;
+    margin-top: 10vh;
+    justify-content: space-evenly;
+}
+.social i{
+
+    font-size: 2rem;
+}
+
+
+ .about{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 300px;
+}
+
+.Goals-tag{
+    max-width: 800px;
+}
+
+.about h2{
+    font-weight: 600;
+    margin-top: 20vh;
+    padding: 0px 60px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #F8FAFC;
+}
+
+.about ul{
+    margin-top: 5vh;
+    padding: 0px 60px;
+    list-style-type: decimal;
+    color: #CBD5E1;
+}
+
+.about li{
+    margin-top: 5vh;
+}
+
+.skill-tag{
+    margin-top: 40vh;
+}
+
+.skill-tag h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 15vh;
+    color: #F8FAFC;
+
+}
+
+.skills{
+    display: flex;
+    margin-top: 2vh;
+    max-width: 100%;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 5vh;
+}
+
+
+.skill-card{
+    display:flex;
+    flex-direction:column;
+    min-width:220px;
+    min-height:220px;
+    padding:10px;
+    background-color:#13315c ;
+    border:2px solid #13315c;
+    border-radius:15px;
+    transition:transform .3s ease;
+    color: #CBD5E1;
+}
+
+.skill-card h3{
+    text-align: center;
+    border-bottom:0.2em solid #061222;
+}
+
+.skill-card li{
+    list-style-type: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
 }

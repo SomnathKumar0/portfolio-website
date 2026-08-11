@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box; /*this so that the containers dont take extra space out of their fixed width*/
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
 }
 
 body{
-    background-color: #0F1C2E;
+    background: linear-gradient(90deg,  #000914,  #25015f);
     overflow-x: auto;
     overflow-y: auto;
 }
@@ -17,13 +18,17 @@ body{
 
 .navbar{
     min-height: 60px;
-    background-color:  #0F1C2E;
+    background: linear-gradient(90deg,  #000914,  #25015f);
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
     padding: 8px 12px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
 }
 
 .logo{
@@ -40,7 +45,14 @@ body{
     color: white;
 }
 
+.nav-add a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
 .nametag{
+    margin-top: 15vh;
     min-height:30vh;
     display: flex;    
     align-items: start;
@@ -48,19 +60,23 @@ body{
 }
 
 .nametag h1{
-    margin-top: 20vh;
     padding: 0px 60px;
+    margin-top: 5vh;
     font-size: 4rem;
     font-weight: bold;
-    color: #F8FAFC;
+    color: #CBD5E1;
 }
 
 .nametag h2{
-    font-weight: 600;
+    font-weight: 800;
     margin-top: 5vh;
     padding: 0px 60px;
-    color: #F8FAFC;
+    background: linear-gradient(90deg, #6a17d7, #1ac9c6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
 
 .about-me{
     margin-top: 5vh;
@@ -84,6 +100,7 @@ body{
     padding: 12px 24px;
     border-radius: 10px;
     font-weight: 600;
+    background: linear-gradient(90deg, #8B5CF6, #06B6D4);
 }
 
 .btn-outline {
@@ -93,6 +110,8 @@ body{
     border-radius: 10px;
     font-weight: 600;
 }
+
+
 .btn1{
     transition:transform .3s ease;
 }
@@ -201,3 +220,4 @@ body{
 .skill-card:hover{
     transform:translateY(-8px);
 }
+

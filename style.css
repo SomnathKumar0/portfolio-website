@@ -31,10 +31,19 @@ body{
     z-index: 2;
 }
 
+.nav-logo{
+    height: 50px;
+    width: 100px;
+    min-width: 100px;
+}
+
 .logo{
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("blueberry.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50px;
 }
 
 .nav-add{
@@ -138,86 +147,52 @@ body{
 }
 
 
- .about{
-    margin-top: 10vh;
-    display: flex;
-    justify-content: flex-end;
-    min-height: 300px;
-}
-
-.Goals-tag{
-    max-width: 800px;
-}
-
-.about h2{
-    font-weight: 600;
-    margin-top: 20vh;
-    padding: 0px 60px;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #F8FAFC;
-}
-
-.about ul{
-    margin-top: 5vh;
-    padding: 0px 60px;
-    list-style-type: decimal;
-    color: #CBD5E1;
-}
-
-.about li{
-    margin-top: 5vh;
-}
-
-.skill-tag{
-    margin-top: 40vh;
-}
-
-.skill-tag h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 5px;
-    margin-bottom: 15vh;
-    color: #F8FAFC;
-
-}
-
-.skills{
-    display: flex;
-    margin-top: 2vh;
+.about{
+    max-height: 500px;
     max-width: 100%;
+    gap: 20px;
+}
+
+.me{
+    display: flex;
     justify-content: center;
-    gap: 50px;
-    margin-bottom: 5vh;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    margin-top: 50vh;
+    margin-bottom: 10vh;
+    max-width: 100%;   /* NEW - caps total row width */
 }
 
-
-.skill-card{
-    display:flex;
-    flex-direction:column;
-    min-width:220px;
-    min-height:220px;
-    padding:10px;
-    background-color:#13315c ;
-    border:2px solid #13315c;
-    border-radius:15px;
-    transition:transform .3s ease;
-    color: #CBD5E1;
+.a{
+    height: 220px;
+    width: 550px;
+    border-radius: 15px;
 }
 
-.skill-card h3{
-    text-align: center;
-    border-bottom:0.2em solid #061222;
+.b{
+    height: 220px;
+    width: 600px;    border-radius: 15px;
 }
 
-.skill-card li{
-    list-style-type: none;
-    padding-top: 20px;
-    text-align: center;
+.c{
+    height: 250px;
+    width: 750px;
+    border-radius: 15px;
 }
 
-.skill-card:hover{
-    transform:translateY(-8px);
+.d{
+    height: 250px;
+    width: 400px;
+    border-radius: 15px;
 }
 
+.trs{
+    transition: transform 0.7s ease;
+    background: linear-gradient(180deg,  #000914,  #25015f );
+}
+
+.trs:hover {
+    transform: perspective(800px) rotateX(15deg);
+}

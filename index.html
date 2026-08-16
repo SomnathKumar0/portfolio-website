@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Somnath Kumar — Frontend Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,44 +11,91 @@
     <header>
         <div class="navbar">
             <div class="nav-logo">
-            <div class="logo"></div>
+                <span class="brand-name">Somnath_Kumar</span>
             </div>
             <div class="nav-add">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About Me</a>
-                <a href="#">Pages</a>
-           </div>
+                <a href="#about-sec" class= "button btn1">About Me</a>
+                <a href="#work-sec" class= "button btn2">My Works</a>
+                <a href="#contact-sec" class= "button btn3">contact</a>
+            </div>
         </div>
     </header>
     <main>
-        <div class="hero">
-            <div class="nametag">
-                <h2>Hi, I am</h2>
-                <h1>Somnath Kumar</h1>
-                <h2>Frontend Developer</h2>
-                <p class="about-me">Hi! I'm Somnath, a first-year Computer Science student from Bihar, India, learning web development by building real projects. My goal is to become a freelance web developer, creating clean and responsive websites for small businesses. Outside of coding, I enjoy medieval history, literature, and gaming.</p>
-                <div class="button">
-                    <a href="#" class="btn-outline btn1">My Projects</a>
-                    <a href="#" class="btn-filled btn1">Lets connect</a>
-                </div>
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/somnath-kumar-95540a253/" target="_blank"><i class="fa-brands fa-square-linkedin" style="color: #f8fafc;"></i></a>
-                    <a href="https://github.com/SomnathKumar0" target="_blank"><i class="fa-brands fa-github" style="color: #f8fafc;"></i></a>
-                    <a href="https://www.instagram.com/winter_meree" target="_blank"><i class="fa-brands fa-instagram" style="color: #f8fafc;"></i></a>
-                    <a href="https://discord.com/users/1460987689397391504" target="_blank"><i class="fa-brands fa-discord" style="color: #f8fafc;"></i></a>
+        <section class="hero" id="about-sec">
+            <div class="herobox">
+                <div class="hero-content ">
+                    <p class="hero-line abt">Welcome to my portfolio!</p>
+                    <h1 class="abt">I'M SOMNATH <span class="highlight">KUMAR</span></h1>
+                    <h2 class="abt">A Frontend Developer</h2>
+                    <p class="about-me abt">First-year CS student and self-learning web developer. I build clean, functional sites and I'm looking for freelance work and open-source contributions.</p>
+                    <div class="hero-actions abt">
+                        <a href="#" class="btnfilled btn">View Work</a>
+                        <a href="#" class="btnoutline btn">Get In Touch</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="about">
-            <div class="me">
-                <div class="a trs"></div>
-                <div class="b trs"></div>
-                <div class="c trs"></div>
-                <div class="d trs"></div>
+        </section>
+        <section class="work" id="work-sec">
+            <div class="progress" >
+                <h2>In Progress</h2>
             </div>
-        </div>
+            <div class="projecthead">
+                <div class="learning hov">
+                    <span class="status ">Ongoing</span>
+                    <h3>Currently Learning</h3>
+                    <p>Working through the fundamentals — HTML, CSS, and JavaScript — and building small practice projects along the way.</p>
+                    <span class="stack1">HTML  ·  CSS  ·  JS</span>
+                </div>
+                <div class="project hov">
+                    <span class="proj ">Planned</span>
+                    <h3>My First project</h3>
+                    <p>No shipped work yet, but this space will hold the first project once it's built. Check back soon.</p>
+                    <span class="stack2">Coming soon</span>
+                </div>
+            </div>
+        </section>
+        <section class="toolkit">
+            <div class="tool">
+                <h2>Toolkit</h2>
+                <div class="kit">
+                    <div class="tool1 skill">
+                        <span>HTML</span>
+                    </div>
+                    <div class="tool2 skill">
+                        <span>CSS</span>
+                    </div>
+                    <div class="tool3 skill">
+                        <span>Git & Github</span>
+                    </div>
+                    <div class="tool4 skill">
+                        <span>Javascript
+                            (learning)</span>
+                    </div>
+                    <div class="tool5 skill">
+                        <span>Firebase
+                            (learning)</span>
+                    </div>
+                    <div class="tool6 skill">
+                        <span>C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact-sec">
+            <div class="contact-box">
+                <h2>Contact Me</h2>
+                <div class="contact-form">
+                    <div class="form1">
+                    <p>Open to freelance work <span>and</span> collaborations.</p>
+                    </div>
+                    <div class="form2">
+                        <a href="mailto:somnathkumar854105@gmail.com">somnathkumar854105@gmail.com</a>
+                        <a href="https://github.com/SomnathKumar0">https://github.com/SomnathKumar0</a>
+                        <a href="https://www.linkedin.com/in/somnath-kumar-95540a253" target="_blank">www.linkedin.com/in/somnath-kumar-95540a253</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
 </body>
 </html>

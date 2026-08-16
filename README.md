@@ -17,7 +17,6 @@ This portfolio was built to create a personal space where I can showcase my tech
 
 - About Me section
 - Skills showcase
-- Goals section
 - Project showcase
 - Smooth hover effects and transitions
 - Clean and minimal UI design
